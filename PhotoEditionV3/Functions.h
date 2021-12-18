@@ -91,8 +91,6 @@ BOOL SaveFileDialog(HWND hwnd, LPTSTR pFileName, LPTSTR pTitleName)
 	ofn.Flags = OFN_EXPLORER | OFN_OVERWRITEPROMPT;
 	ofn.lpstrFilter = TEXT("Bitmap Files (*.bmp)\0*.bmp\0\0");
 
-
-
 	return GetSaveFileName(&ofn);
 }
 
@@ -245,10 +243,6 @@ PBITMAPINFO CreateBitmapInfoStruct(HWND hwnd, HBITMAP hBmp, PBITMAPINFO pbmi)
 
 	// Compute the number of bytes in the array of color
 	// indices and store the result in biSizeImage.
-	// For Windows NT, the width must be DWORD aligned unless
-	// the bitmap is RLE compressed. This example shows this.
-	// For Windows 95/98/Me, the width must be WORD aligned unless the
-	// bitmap is RLE compressed.
 	pbmi->bmiHeader.biSizeImage = ((pbmi->bmiHeader.biWidth * cClrBits + 31) & ~31) / 8 * pbmi->bmiHeader.biHeight;
 	// Set biClrImportant to 0, indicating that all of the
 	// device colors are important.

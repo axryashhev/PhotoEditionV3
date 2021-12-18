@@ -52,38 +52,38 @@ END
 
 H_Menu MENU
 BEGIN
-    POPUP "&File"
+    POPUP "&Файл"
     BEGIN
-        MENUITEM "Open Image",                  IDM_OPEN_BM
-        MENUITEM "Print Image",                 IDM_PRINT_BM, GRAYED
-        MENUITEM "Save Bitmap",                 IDM_SAVE_BM, GRAYED
+        MENUITEM "Открыть",                     IDM_OPEN_BM
+        MENUITEM "Печать",                 IDM_PRINT_BM, GRAYED
+        MENUITEM "Сохранить",                 IDM_SAVE_BM, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Exit Program",                IDM_EXIT
+        MENUITEM "Выход",                IDM_EXIT
     END
-    POPUP "&Edit"
+    POPUP "&Редактирование"
     BEGIN
-        MENUITEM "Undo",                        IDM_UNDO
-        MENUITEM "Copy",                        IDM_COPY, GRAYED
-        MENUITEM "Cut",                         IDM_CUT, GRAYED
-        MENUITEM "Paste",                       IDM_PASTE, GRAYED
+        MENUITEM "Отменить",                        IDM_UNDO
+        MENUITEM "Копировать",                        IDM_COPY, GRAYED
+        MENUITEM "Вырезать",                         IDM_CUT, GRAYED
+        MENUITEM "Вставить",                       IDM_PASTE, GRAYED
     END
-    POPUP "&Zoom"
+    POPUP "&Зум"
     BEGIN
         MENUITEM SEPARATOR
-        MENUITEM "Zoom In",                     IDM_ZOOMIN, GRAYED
+        MENUITEM "Увеличить",                     IDM_ZOOMIN, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Zoom Out",                    IDM_ZOOMOUT, GRAYED
+        MENUITEM "Уменьшить",                    IDM_ZOOMOUT, GRAYED
     END
-    POPUP "&Image Effects"
+    POPUP "&Эффекты"
     BEGIN
-        MENUITEM "Convert to Grayscale",        IDM_GRAY
-        MENUITEM "Red Eye Reduction",           IDM_REDEYE
-        MENUITEM "Flip Image Verticallly",      IDM_FLIPV
-        MENUITEM "Flip Image Horizontallly",    IDM_FLIPH
-        MENUITEM "Convert to Sepia",            IDM_SEPIA
-        MENUITEM "Rotate 90В° Right",           IDM_ROTATERIGHT
-        MENUITEM "Rotate 90В° Left",            IDM_ROTATELEFT
-        MENUITEM "Convert to DuoTone",          IDM_DUOTONE
+        MENUITEM "Преобрать в оттенки серого",        IDM_GRAY
+        MENUITEM "Уменьшение Эффекта Красных Глаз",           IDM_REDEYE
+        MENUITEM "Перевернуть по вертикали",      IDM_FLIPV
+        MENUITEM "Перевернуть по горизонтали",    IDM_FLIPH
+        MENUITEM "Преобразовать в сепию",            IDM_SEPIA
+        MENUITEM "Повернуть на 90° вправо",           IDM_ROTATERIGHT
+        MENUITEM "Поверните на 90° влево",            IDM_ROTATELEFT
+        MENUITEM "Преобразовать в DuoTone",          IDM_DUOTONE
     END
 END
 

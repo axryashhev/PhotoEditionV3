@@ -302,6 +302,8 @@ LRESULT CALLBACK WindowProcedure(HWND hwnd, UINT message, WPARAM wParam, LPARAM 
 				PBITMAPINFO pbi = CreateBitmapInfoStruct(hwnd, hBitmap, pbmi);
 				HDC hdce = GetDC(hwnd);
 
+                // add an extension .bmp
+                strcat_s(szFileName, ".bmp");
 
 				SaveBMPFile(hwnd, szFileName, pbi, hBitmap, hdce);
 				ReleaseDC(hwnd, hdce);
