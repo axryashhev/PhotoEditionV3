@@ -1,0 +1,114 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+H_Menu MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Image",                  IDM_OPEN_BM
+        MENUITEM "Print Image",                 IDM_PRINT_BM, GRAYED
+        MENUITEM "Save Bitmap",                 IDM_SAVE_BM, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Exit Program",                IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Undo",                        IDM_UNDO
+        MENUITEM "Copy",                        IDM_COPY, GRAYED
+        MENUITEM "Cut",                         IDM_CUT, GRAYED
+        MENUITEM "Paste",                       IDM_PASTE, GRAYED
+    END
+    POPUP "&Zoom"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom In",                     IDM_ZOOMIN, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom Out",                    IDM_ZOOMOUT, GRAYED
+    END
+    POPUP "&Image Effects"
+    BEGIN
+        MENUITEM "Convert to Grayscale",        IDM_GRAY
+        MENUITEM "Red Eye Reduction",           IDM_REDEYE
+        MENUITEM "Flip Image Verticallly",      IDM_FLIPV
+        MENUITEM "Flip Image Horizontallly",    IDM_FLIPH
+        MENUITEM "Convert to Sepia",            IDM_SEPIA
+        MENUITEM "Rotate 90В° Right",           IDM_ROTATERIGHT
+        MENUITEM "Rotate 90В° Left",            IDM_ROTATELEFT
+        MENUITEM "Convert to DuoTone",          IDM_DUOTONE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
